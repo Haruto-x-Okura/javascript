@@ -1,0 +1,38 @@
+#counter{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 10em;
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 10%);
+    color: ivory;
+}
+#mydiv{
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 10%);
+
+}
+.buttons{
+    font-size: 1.5em;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(27, 78%, 49%);
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+.buttons:hover{
+    background-color: hsl(27, 78%, 29%);
+    color: white;
+}
+#reset{
+    background-color: hsl(0, 70%, 47%);
+}
