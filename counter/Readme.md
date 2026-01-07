@@ -26,10 +26,14 @@ This project was created to practice:
 It also marks **Day 1** of my *12 Days – 12 Projects* coding challenge.
 
 ## Project Structure
+
+```text
 counter/
-|-index.html
-|-styles.css
-|-script.js
+├── index.html
+├── style.css
+└── script.js
+```
+
 
 
 ## Future Enhancements
