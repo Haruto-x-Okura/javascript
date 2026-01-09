@@ -8,7 +8,7 @@
 body{
     height: 100vh;
     width: 100vw;
-    background: #eef4ef;
+    background: hsl(130, 21%, 90%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,6 +74,7 @@ body{
 
     border-radius: 8px;
     border: 1px solid #c8e6c9;
+    box-shadow: #58b75e 0px 4px 6px -1px, #1b5e20 0px 2px 4px -1px;
     color: #1b5e20;
 }
 
@@ -90,4 +91,20 @@ body{
 .todo-item input:checked + span{
     text-decoration: line-through;
     color: #6d8f74;
+}
+
+.todo-item span {
+    flex: 1;   
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #0a190b;
+}
+
+.delete-btn:hover {
+    color: #c62828;
 }

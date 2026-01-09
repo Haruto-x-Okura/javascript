@@ -14,9 +14,21 @@ function addTask() {
     task.innerHTML = `
         <input type="checkbox">
         <span>${text}</span>
+         <button class="delete-btn">
+            <i class="fa fa-trash-o"></i>
+        </button>
+        
     `;
+    task.querySelector(".delete-btn").addEventListener("click", () => {
+    task.remove();
+    });
 
     taskList.appendChild(task);
     input.value = "";
 }
 
+input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        addTask();
+    }
+});
