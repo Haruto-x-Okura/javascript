@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: #eef4ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    background: #f6fbf7; 
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.18);
+    border: 1px solid rgba(46, 125, 50, 0.15);
+}
+
+
+#taskinput{
+    width: 300px;
+    padding: 10px 12px;
+    border: 2px solid #2e7d32; /* emerald */
+    background-color: #ffffff;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    color: #1b5e20;
+}
+
+#taskinput::placeholder{
+    color: #7fae86;
+}
+
+#mybutton{
+    padding: 10px 16px;
+    border: none;
+    background: #2e7d32;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.25s ease, transform 0.15s ease;
+}
+
+#mybutton:hover{
+    background: #1b5e20;
+    transform: translateY(-1px);
+}
+
+
+#task{
+    margin-top: 20px;
+    list-style: none;
+}
+
+
+.todo-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #e3f2e6; /* pale green */
+    padding: 12px 14px;
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+    border: 1px solid #c8e6c9;
+    color: #1b5e20;
+}
+
+
+.todo-item input[type="checkbox"]{
+    accent-color: #2e7d32;
+}
+
+.todo-item:hover{
+    background: #d7eddc;
+}
+
+
+.todo-item input:checked + span{
+    text-decoration: line-through;
+    color: #6d8f74;
+}
