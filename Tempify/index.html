@@ -7,30 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id = "app">
+
+    <div class="theme-toggle">
+        <button id="toggleTheme">🌙 Dark Mode</button>
+    </div>
+
+
+
+
+     <div id="app" class="glass"> 
         <h1>Welcome to Tempify</h1>
         <p>Enter your Conversion Choice</p>
         <div class="input-group">
             <input type="number" id="inputValue" placeholder="Enter Temperature">
         
-            <h2 class="heading">FROM</h2>
-            <input type = "radio" id = "celsius" name = "choice" value = "celsius">
-            <label for = "celsius">Celsius</label>
-            <input type = "radio" id = "fahrenheit" name = "choice" value = "fahrenheit">
-            <label for = "fahrenheit">Fahrenheit</label>
-            <input type = "radio" id = "kelvin" name = "choice" value = "kelvin">
-            <label for = "kelvin">Kelvin</label>  
-            <br>
-            <h2 class="heading">TO</h2>
-            <input type = "radio" id = "toCelsius" name = "toChoice" value = "toCelsius">
-            <label for = "toCelsius">Celsius</label>
-            <input type = "radio" id = "toFahrenheit" name = "toChoice" value = "toFahrenheit">
-            <label for = "toFahrenheit">Fahrenheit</label>
-            <input type = "radio" id = "toKelvin" name = "toChoice" value = "toKelvin">
-            <label for = "toKelvin">Kelvin</label>
+            <div class="choice-box"> <!-- ADDED -->
+                <h2 class="heading">FROM</h2>
+                <label><input type="radio" name="choice" value="celsius"> Celsius</label>
+                <label><input type="radio" name="choice" value="fahrenheit"> Fahrenheit</label>
+                <label><input type="radio" name="choice" value="kelvin"> Kelvin</label>
+            </div>
+
+              <div class="choice-box"> <!-- ADDED -->
+                <h2 class="heading">TO</h2>
+                <label><input type="radio" name="toChoice" value="toCelsius"> Celsius</label>
+                <label><input type="radio" name="toChoice" value="toFahrenheit"> Fahrenheit</label>
+                <label><input type="radio" name="toChoice" value="toKelvin"> Kelvin</label>
+            </div>
         </div>
         <button id="convertBtn">Convert</button>
-        <h2 id="result"></h2>
+         <h2 id="result" class="result"></h2>
     </div>
     <script src="script.js"></script>
 </body>

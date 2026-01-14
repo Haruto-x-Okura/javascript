@@ -2,8 +2,19 @@ const inputValue = document.getElementById("inputValue");
 const convertBtn = document.getElementById("convertBtn");
 const result = document.getElementById("result");
 
+const toggleThemeBtn = document.getElementById("toggleTheme");
+toggleThemeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    toggleThemeBtn.textContent =
+        document.body.classList.contains("dark")
+            ? "☀️ Light Mode"
+            : "🌙 Dark Mode";
+});
+
 convertBtn.addEventListener("click", () => {
     const value = parseFloat(inputValue.value);
+
+     result.className = "result"
 
     if (isNaN(value)) {
         result.textContent = "Please enter a valid temperature value.";
@@ -52,5 +63,13 @@ convertBtn.addEventListener("click", () => {
         }
     }
 
-    result.textContent = `Result: ${convertedValue.toFixed(2)}`;
+    showResult(`Result: ${convertedValue.toFixed(2)}`, "success");
 });
+
+/* ADDED: Result Animation Helper */
+function showResult(text, type) {
+    result.textContent = text;
+    result.classList.add(type);
+    void result.offsetWidth; // force reflow
+    result.classList.add("show");
+}
