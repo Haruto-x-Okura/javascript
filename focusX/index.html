@@ -7,9 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background-media" id="backgroundMedia"></div>
+    
     <div class="notification-box" id="notificationBox">
         <span class="notification-icon">🔔</span>
         <span id="notificationText"></span>
+    </div>
+
+    <div class="upload-section" id="uploadSection">
+        <div class="upload-box" id="uploadBox">
+            <div class="upload-icon">🖼️</div>
+            <p class="upload-text">Drag & drop image/video here</p>
+            <p class="upload-subtext">or click to browse</p>
+            <input type="file" id="fileInput" accept="image/*,video/*" hidden>
+        </div>
+        <button class="clear-bg-btn" id="clearBgBtn" style="display: none;">Cancel Background</button>
     </div>
 
     <div class="main-wrapper">
