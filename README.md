@@ -40,6 +40,12 @@ Each project focuses on solving a small, well-defined problem using **HTML, CSS,
 │   ├── style.css
 |   └── script.js
 |
+├── Day-04-FocusX/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+|
 ├── ...
 └── Day-12-Coming-Soon/
 ```
@@ -50,9 +56,10 @@ Each project focuses on solving a small, well-defined problem using **HTML, CSS,
 
 | Day | Project Name | Live Demo |
 |----:|--------------|-----------|
-| 01  | Counter App  | Netlify |
-| 02  | To-do-list App  | Netlify |
-| 03  | Tempify  | Netlify |
+| 01  | Counter App  | [🔗 Netlify](https://simplecounterbyharuto.netlify.app/) |
+| 02  | To-do-list App  | [🔗 Netlify](https://todolistbyharuto.netlify.app/) |
+| 03  | Tempify  | [🔗 Netlify](https://tempifybyharuto.netlify.app/) |
+| 04  | FocusX - Pomodoro Timer  | [🔗 Netlify](https://focusxbyharuto.netlify.app/) |
 ---
 
 ## What I Am Learning
@@ -78,7 +85,7 @@ Each project focuses on solving a small, well-defined problem using **HTML, CSS,
 - [x] Day 01 – Counter App
 - [x] Day 02 - To-do-list
 - [x] Day 03 - Tempify
-- [ ] Day 04
+- [x] Day 04 - FocusX - Pomodoro Timer
 - [ ] Day 05
 - [ ] Day 06
 - [ ] Day 07
